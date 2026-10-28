@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(aegis) Consultants | Digital & Tech Solutions</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("service_ylbzwtx"); // Replace with your EmailJS Public Key
+       })();
+    </script>
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <h1 class="logo">(aegis)<span>Consultants</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Services.html">Services & Pricing</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html" class="btn-nav">Get a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h2>Secure, High-Performance Digital Solutions</h2>
+            <p>We build modern web applications and robust digital infrastructure designed to protect and scale your business.</p>
+            <br>
+            <a href="Contact.html" class="btn-primary">Request a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Services & Packages Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h3>Our Services & Packages</h3>
+            <div class="services-grid">
+                
+                <!-- Package 1: Starter Business Site -->
+                <div class="service-card">
+                    <h4>Starter Business Site</h4>
+                    <p class="price">R4,900</p>
+                    <p>3-page responsive website, mobile-optimized, fast loading speed, and basic SEO setup.</p>
+                    <!-- Replace the href below with your actual Yoco or PayFast payment link URL -->
+                    <br>
+                    <a href="https://pay.yoco.com/your-link-here" class="btn-primary" target="_blank">Purchase Package</a>
+                </div>
+
+                <!-- Package 2: Custom Web Application -->
+                <div class="service-card">
+                    <h4>Custom Web Application</h4>
+                    <p class="price">R7,500+</p>
+                    <p>Full-stack functionality, interactive databases, secure user authentication, and custom client portals.</p>
+                    <br>
+                    <a href="Contact.html" class="btn-primary">Request Custom Quote</a>
+                </div>
+
+                <!-- Package 3: Risk & Security Advisory -->
+                <div class="service-card">
+                    <h4>Risk & Security Advisory</h4>
+                    <p class="price">Consultation</p>
+                    <p>Proactive digital risk assessments, vulnerability reviews, and security hardening for your digital assets.</p>
+                    <br>
+                    <a href="Contact.html" class="btn-primary">Book Consultation</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-container">
+            <h3>Start Your Project</h3>
+            <p>Fill out the form below and we’ll get back to you within 24 hours.</p>
+            
+            <form id="inquiryForm" class="inquiry-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Select Service</label>
+                    <select id="service">
+                        <option value="Starter Business Site">Starter Business Site (R4,900)</option>
+                        <option value="Custom Software">Custom Web Application / Software</option>
+                        <option value="Digital Risk Assessment">Digital Risk Assessment</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Project Details</label>
+                    <textarea id="message" rows="4" placeholder="Tell us about your project goals..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Submit Inquiry</button>
+                <p id="formFeedback" class="feedback-msg"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 (aegis) Consultants. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
