@@ -245,3 +245,28 @@ footer {
 .nav-links a:hover::after {
     width: 100%;
 }
+
+/* Responsive Design for Tablets and Mobile Phones */
+@media screen and (max-width: 768px) {
+    /* Stack the navigation bar vertically on smaller screens */
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Shrink hero heading size for mobile */
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Switch service cards grid into a single column */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
